@@ -1,6 +1,5 @@
 import sys
 import cv2 as cv
-import sys
 
 cap = cv.VideoCapture(0)
 
