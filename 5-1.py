@@ -1,9 +1,6 @@
 import cv2 as cv
 import sys
 
-
-
-
 img_color = cv.imread('copy.png', cv.IMREAD_COLOR)
 
 if img_color is None:
