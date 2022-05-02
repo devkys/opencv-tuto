@@ -3,8 +3,8 @@
 
 using namespace std;
 using namespace cv;
-//전역변수로 필요한 것: 좌표, 불리언 타입의 마우스 체크, Mat 클래스의 이미지 선언
 
+//전역변수로 필요한 것: 좌표, 불리언 타입의 마우스 체크, Mat 클래스의 이미지 선언
 bool mouse_is_pressing = false;
 int start_x, start_y, end_x, end_y;
 Mat img_color;
@@ -13,7 +13,7 @@ int step = 0;
 void swap(int* v1, int* v2){
     int temp = *v1;
     *v1 = *v2;
-    *v2 =temp;
+    *v2 = temp;
 }
 
 void mouse_callback(int event, int x, int y, int flags, void* param){

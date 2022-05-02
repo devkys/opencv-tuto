@@ -356,8 +356,6 @@ int main(int, char**)
 		GaussianBlur(img_gray, img_gray, Size(3, 3), 0, 0);
 		Canny(img_gray, img_edges, 50, 150);
 
-
-
 		int width = img_filtered.cols;
 		int height = img_filtered.rows;
 

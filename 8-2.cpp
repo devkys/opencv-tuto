@@ -28,6 +28,7 @@ int main(){
         imshow("Color", img_result);
         imshow("roi", img_roi);
         int key = waitKey(1);
+        
         if(key==27)
             break;
     }
