@@ -1,10 +1,12 @@
 import cv2 as cv
+from nose import DeprecatedTest
 import numpy as  np
 
 def notInList(newObject):
     for detectedObject in detectedObjects:
-        a = newObject[0]-detectedObject[0]  
-        b = newObject[1]-detectedObject[1]
+        a = newObject[0] - detectedObject[0]
+        b = newObject[1] - detectedObject[1]  
+    
         if np.sqrt(a*a+b*b) < 5:
             return False
     return True
@@ -27,6 +29,7 @@ for x in range(result.shape[1]):
             detectedObjects.append((x,y))
             cv.rectangle(img_rgb, (x,y), (x+w, y+h), (0,0,255), 1)  
             count = count+1
+
 
 print(count)
 cv.imshow('result', img_rgb)
